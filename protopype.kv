@@ -527,8 +527,8 @@
                         root.slider_change(slider.value)
                         #MODIFICAR
                 size_hint: 0.2,0.1
-                halign: 'left'
-                valign: 'left'
+                halign: 'center'
+                padding_y: [self.height / 2.0 - (self.line_height / 2.0) * len(self._lines), 0]
 
         BoxLayout:
                 orientation: "vertical"
@@ -566,6 +566,7 @@
                 size_hint: 1, 1
                 font_size: '12sp'
 
+
 <MySpinner>:
         id: myspinner
         #orientation: "vertical"
@@ -582,13 +583,18 @@
                 on_text_validate: root.get_code(self.text)
                 size_hint: 0.4,1
                 font_size: '12sp'
-        
-        Spinner:
+                halign: 'center'
+                padding_y: [self.height / 2.0 - (self.line_height / 2.0) * len(self._lines), 0]
+
+        SpinnerWidget:
                 id: spinner
+                background_normal: ''
+                background_color: [51/255,83/255,158/255,1]
                 text: root.text
                 values: root.values
                 size_hint: 0.6,1   
                 font_size: '12sp'
+
 
 <MyBubble>: #no se usa
         size_hint: (None, None)
