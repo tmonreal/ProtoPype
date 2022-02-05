@@ -920,7 +920,7 @@ class MyLine:
         self.points = points
         #self.line.add(Color(0, 1, 0, 1))
         #self.line.add(Line(points=points, width=1))
-        self.line.add(Color(0, 1, 0, .6))
+        self.line.add(Color(0, 1, 1, .6))
         self.line.add(Line(points=points, width=1.5))
         #self.line.add(Ellipse(pos=(points[0][0]-6, points[0][1]-5), size=(7,7)))
         #self.line.add(Ellipse(pos=(points[1][0]-6, points[1][1]-5), size=(7,7)))
@@ -930,7 +930,7 @@ class MyLine:
         self.line.clear()
         #self.line.add(Color(0, 1, 0, 1))
         #self.line.add(Line(points=points, width=1))
-        self.line.add(Color(0, 1, 0, .6))
+        self.line.add(Color(0, 1, 1, .6))
         self.line.add(Line(points=points, width=1.5))
         #self.line.add(Ellipse(pos=(points[0][0]-6, points[0][1]-5), size=(7,7)))
         #self.line.add(Ellipse(pos=(points[1][0]-6, points[1][1]-5), size=(7,7)))
@@ -942,7 +942,7 @@ class FilterDD(Factory.DropDown):
     ignore_case = Factory.BooleanProperty(True)
     options = Factory.ListProperty()
     options_groups = Factory.ListProperty()
-    color_groups = Factory.ListProperty()
+    #color_groups = Factory.ListProperty()
 
     def __init__(self, dismiss_on_select, **kwargs):
         self._needle = None
@@ -956,7 +956,7 @@ class FilterDD(Factory.DropDown):
         for key, value in groups.items():
             self.options_groups.append(key)
             for element in value:
-                self.color_groups.append(CFunction.color[key])
+                #self.color_groups.append(CFunction.color[key])
                 self.options.append(element.nombre)
 
     def on_options_groups(self, instance, values):
@@ -975,7 +975,7 @@ class FilterDD(Factory.DropDown):
             if txt not in _widgets:
                 _widgets[txt] = btn = Factory.DDButton(text=txt)
                 i = self.options.index(txt)
-                btn.line_color = (self.color_groups[i])
+                #btn.line_color = (self.color_groups[i])
                 btn.bind()
                 _order.append(txt)
                 changed = True
