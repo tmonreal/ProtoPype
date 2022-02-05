@@ -25,7 +25,7 @@ from kivy.graphics import Rectangle
 import kivy.properties as kprop
 
 from kivy.uix.dropdown import DropDown
-from kivy.uix.spinner import Spinner
+from kivy.uix.spinner import Spinner, SpinnerOption
 
 from kivy.core.image import Image
 from kivy.core.window import Window
@@ -791,6 +791,21 @@ class MySlider(GridLayout):
     def slider_change(self, value):
         self.value_new = value
 
+class SpinnerOptions(SpinnerOption):
+    def __init__(self, **kwargs):
+        super(SpinnerOptions, self).__init__(**kwargs)
+        self.background_normal = ''
+        self.background_color = [0, 0, 1, 1]    # blue colour
+        self.height = 26
+
+
+class SpinnerDropdown(DropDown):
+
+    def __init__(self, **kwargs):
+        super(SpinnerDropdown, self).__init__(**kwargs)
+        self.auto_width = False
+        self.width = 150
+
 class MySpinner(GridLayout):
     text = kprop.StringProperty() #default value shown
     values = kprop.ListProperty() #available values in dropdown list
@@ -817,6 +832,12 @@ class MySpinner(GridLayout):
 
         except SyntaxError: 
             print("SyntaxError: Escribir un codigo valido")
+
+class SpinnerWidget(Spinner):
+    def __init__(self, **kwargs):
+        super(SpinnerWidget, self).__init__(**kwargs)
+        self.option_cls = SpinnerOptions
+
 
 class MyImageSpinner(GridLayout):
     options = kprop.DictProperty()
