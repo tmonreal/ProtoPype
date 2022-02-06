@@ -181,7 +181,7 @@ class Bloque:
         if value and checkbox.was_active == False: # checkbox activado, No permito crear el mismo boton mas de una vez
             dir = str(Path(__file__).parent.absolute())
             if checkbox.parameter_text == 'dst':
-                source = dir + '\\icons\\image_icon1.png'
+                source = dir + '\\icons\\image_icon.png'
             elif checkbox.parameter_text == 'retval':
                 source = dir + '\\icons\\retval.png'
             elif checkbox.parameter_text == 'Color' or checkbox.parameter_text =='ColorMap':
@@ -217,7 +217,7 @@ class Bloque:
         if value and checkbox.was_active == False: # checkbox activado, No permito crear el mismo boton mas de una vez
             dir = str(Path(__file__).parent.absolute())
             if checkbox.parameter_text == 'dst':
-                source = dir + '\\icons\\image_icon1.png'
+                source = dir + '\\icons\\image_icon.png'
             elif checkbox.parameter_text == 'retval':
                 source = dir + '\\icons\\retval.png'
             button_output = MyParameterButton(button_id = 'output_parameter', parameter_text = checkbox.parameter_text, source = source,background_color = [0, 0, 0, 0])
@@ -498,7 +498,7 @@ class MyScatterLayout(Bloque, ScatterLayout):
                             
                             for n in range(cant_buttons_in):
                                 button_input = MyInputButton(background_color = [0, 0, 0, 0])
-                                button_input.source = "icons\image_icon1.png"
+                                button_input.source = "icons\image_icon.png"
                                 self.ids.inputs.size_hint = .2, (.2 + .05*cant_buttons_in)
                                 self.ids.inputs.add_widget(button_input)
                                 buttoncallbackin = partial(self.draw_line_pipe, self, "inputs")
@@ -513,7 +513,7 @@ class MyScatterLayout(Bloque, ScatterLayout):
                                 dir = str(Path(__file__).parent.absolute())
                                 if item == 'dst':
                                     #source = r'C:\Users\trini\OneDrive\Favaloro\Tesis\Código\09-Septiembre\01_09_21\icons\image_icon1.png'
-                                    source = dir + '\\icons\\image_icon1.png'
+                                    source = dir + '\\icons\\image_icon.png'
                                     button_output = MyParameterButton(button_id = 'outputs', parameter_text = item, source=source,background_color = [0, 0, 0, 0]) #genero los botones para ponerle los ids pero solo agrego los que son outp imagen
                                     if cant < cant_buttons_out:
                                         self.ids.outputs.size_hint = .2, (.2 + .05*cant_buttons_out)

@@ -920,7 +920,7 @@ class MyLine:
         self.points = points
         #self.line.add(Color(0, 1, 0, 1))
         #self.line.add(Line(points=points, width=1))
-        self.line.add(Color(0, 1, 1, .6))
+        self.line.add(Color(1, 1, 1, 1))
         self.line.add(Line(points=points, width=1.5))
         #self.line.add(Ellipse(pos=(points[0][0]-6, points[0][1]-5), size=(7,7)))
         #self.line.add(Ellipse(pos=(points[1][0]-6, points[1][1]-5), size=(7,7)))
@@ -930,7 +930,7 @@ class MyLine:
         self.line.clear()
         #self.line.add(Color(0, 1, 0, 1))
         #self.line.add(Line(points=points, width=1))
-        self.line.add(Color(0, 1, 1, .6))
+        self.line.add(Color(1, 1, 1, 1))
         self.line.add(Line(points=points, width=1.5))
         #self.line.add(Ellipse(pos=(points[0][0]-6, points[0][1]-5), size=(7,7)))
         #self.line.add(Ellipse(pos=(points[1][0]-6, points[1][1]-5), size=(7,7)))
@@ -1015,11 +1015,11 @@ class FilterDDTrigger(Factory.BoxLayout):
     def __init__(self, **kwargs):
         super(FilterDDTrigger, self).__init__(**kwargs)
         self._prev_dd = None
-        self._textinput = ti = Factory.DDTextInput(multiline=False, hint_text='Search function', size_hint=(0.5,None), height=30, pos_hint={'center_x':0.5, 'center_y':0.5}, 
-        background_color= (0, 0, 0, 0), foreground_color= (1,1,1,1), cursor_color= (1,1,1,1))
+        self._textinput = ti = Factory.DDTextInput(multiline=False, hint_text='Search function', hint_text_color= (1,1,1,1),size_hint=(0.5,None), height=30, pos_hint={'center_x':0.5, 'center_y':0.5}, 
+        cursor_color= (1,1,1,1))
         ti.bind(text=self._apply_filter)
         ti.bind(on_text_validate=self._on_enter)
-        self._button = btn = Factory.DDToolbar_Button(text=self.text, halign= 'left')
+        self._button = btn = Factory.DDToolbar_Button(text=self.text, color= (1,1,1,.8), halign= 'left')
         btn.bind(on_release=self._on_release)
         self.add_widget(btn)
 
