@@ -174,7 +174,7 @@ class MainFloatLayout(FloatLayout):
         scatter = CScatter.MyScatterLayout(draw_line_pipe = self.draw_line_pipe, update_line = self.update_line, delete_scatter = self.delete_scatter, 
                 funcion = Fun, scatter_id = str(self.scatter_count),size=(170, 150) ,  size_hint=(None, None), pos=(self.location + 100,(Window.system_size[1]/2)))
         if self.location < Window.system_size[0]* 0.8:
-            self.location = self.location + 165
+            self.location = self.location + 200
         else:
             self.location= Window.system_size[0]*0.10
         self.ids.bloques_box.add_widget(scatter)

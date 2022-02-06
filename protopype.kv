@@ -223,73 +223,88 @@
         BoxLayout:
                 
                 size_hint: None, None
-                size: 350, 100
+                size: 350, 250
                 center: root.center
                 orientation: 'vertical'
                 Label:
                         text: "ProtoPype"
-                        font_name: "Roboto"
+                        font_name: "Roboto"                        
                         bold: True
-                        font_size:'20sp'
+                        font_size:'60sp'
                         Image:
                                 source:"icons\\pipe.png"
-                                center_x: self.parent.center_x + 60
-                                center_y: self.parent.center_y
-                                size: 25,25
+                                center_x: self.parent.center_x 
+                                center_y: self.parent.center_y + 100
+                                size_hint_x: None
+                                size_hint_y: None
+                                height: 150
+                                width: 150
+                                allow_stretch: True
                 Label:
-                        size_hint: 0.1,0.3 
-                Button:
-                        text: 'New'
+                        text: "Fast prototyping app for image processing."
                         font_name: "Roboto"
-                        on_press: root.manager.current = 'main screen'
-                        halign: 'center'
-                        valign: 'center'
-                        background_color: 0,0,0,0
-                        canvas.before:                
-                                Color:
-                                        rgba: 165/255,103/255,142/255,0.5
-                                RoundedRectangle:
-                                        pos: self.pos
-                                        size: self.size
-                                        radius: [8]
-                                Color:
-                                        rgba: 165/255,103/255,142/255,0.5
-                                        #root.line_color
-                                Line:
-                                        width: 0.5
-                                        rounded_rectangle: self.x, self.y, self.width, self.height, 8, 100
-                        Image:
-                                source:"icons\\new.png"
-                                center_x: self.parent.center_x - 34
-                                center_y: self.parent.center_y
-                                size: 25,25
+                        bold: True
+                        font_size:'14sp'
+                        size_hint: 1,0.3
                 Label:
-                        size_hint: 0.1,0.3  
-                Button:
-                        text: 'Open'
-                        font_name: "Roboto"
-                        on_press: root.manager.current = 'saved screen'
-                        halign: 'center'
-                        valign: 'center'
-                        background_color: 0,0,0,0
-                        canvas.before:                
-                                Color:
-                                        rgba: 165/255,103/255,142/255,0.5
-                                RoundedRectangle:
-                                        pos: self.pos
-                                        size: self.size
-                                        radius: [8]
-                                Color:
-                                        rgba: 165/255,103/255,142/255,0.5
-                                        #root.line_color
-                                Line:
-                                        width: 0.5
-                                        rounded_rectangle: self.x, self.y, self.width, self.height, 8, 100
-                        Image:
-                                source:"icons\\open.png"
-                                center_x: self.parent.center_x - 34
-                                center_y: self.parent.center_y
-                                size: 23,23
+                        size_hint:1, 0.5
+                
+                BoxLayout:
+                        orientation: "horizontal"
+                        pos: self.parent.pos  # important!
+                        size: 350, 100
+                        size_hint: None, None
+                        spacing: 20
+                        Button:
+                                text: 'New'
+                                font_name: "Roboto"
+                                font_size:'19sp'
+                                text_size: self.width - dp (125), self.height - dp(50)
+                                on_press: root.manager.current = 'main screen'
+                                background_color: 0,0,0,0
+                                canvas.before:                
+                                        Color:
+                                                rgba: 49/255,56/255,102/255,1
+                                        RoundedRectangle:
+                                                pos: self.pos
+                                                size: self.size
+                                                radius: [8]
+                                        Color:
+                                                rgba: 49/255,56/255,102/255,1
+                                                #root.line_color
+                                        Line:
+                                                width: 0.5
+                                                rounded_rectangle: self.x, self.y, self.width, self.height, 8, 100
+                                Image:
+                                        source:"icons\\new.png"
+                                        center_x: self.parent.center_x 
+                                        center_y: self.parent.center_y + 25
+                                        size: 32,32
+                        Button:
+                                text: 'Open'
+                                font_name: "Roboto"
+                                font_size:'19sp'
+                                text_size: self.width - dp (115), self.height - dp(50)
+                                on_press: root.manager.current = 'saved screen'
+                                background_color: 0,0,0,0
+                                canvas.before:                
+                                        Color:
+                                                rgba: 49/255,56/255,102/255,1
+                                        RoundedRectangle:
+                                                pos: self.pos
+                                                size: self.size
+                                                radius: [8]
+                                        Color:
+                                                rgba: 49/255,56/255,102/255,1
+                                                #root.line_color
+                                        Line:
+                                                width: 0.5
+                                                rounded_rectangle: self.x, self.y, self.width, self.height, 8, 100
+                                Image:
+                                        source:"icons\\open.png"
+                                        center_x: self.parent.center_x 
+                                        center_y: self.parent.center_y + 25
+                                        size: 30,30
 
 <Parameters_Popup>:
         BoxLayout:
