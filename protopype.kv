@@ -345,11 +345,14 @@
                                         background_color: 51/255,83/255,158/255,1
                                         
                                         BoxLayout:
-                                                canvas.before:                
+                                                
+                                                canvas.before:      
+                                                        Color:
+                                                                rgba: 80/255,64/255,154/255,1         
                                                         Rectangle:
                                                                 pos: self.pos
                                                                 size: self.size    
-                                                                source:"icons\\background_myscatter.png" 
+                                                #                source:"icons\\background_menuscreen.png" 
                                                 orientation: "vertical"
                                                 Label:
                                                         text: "Input:"
@@ -362,7 +365,7 @@
                                                         pos_hint: {'center_x':0.5}                                                            
                                                         canvas.after:
                                                                 Color:
-                                                                        rgba: 0.2, 0.71, 0.9, 1
+                                                                        rgba: 165/255,103/255,142/255,1
                                                                 Line:
                                                                         width: 1
                                                                         rounded_rectangle: self.x, self.y, self.width, self.height, 8, 100                                                                                         
@@ -377,7 +380,7 @@
                                                         pos_hint: {'center_x':0.5}                                                
                                                         canvas.after:
                                                                 Color:
-                                                                        rgba: 0.2, 0.71, 0.9, 1
+                                                                        rgba: 165/255,103/255,142/255,1
                                                                 Line:
                                                                         width: 1
                                                                         rounded_rectangle: self.x, self.y, self.width, self.height, 8, 100
@@ -979,7 +982,7 @@
         Image:
                 id: image
                 source: root.source
-                center_x: self.parent.center_x - 34
+                center_x: self.parent.center_x - 40
                 center_y: self.parent.center_y
                 size: 25,25
                 #allow_stretch: True
