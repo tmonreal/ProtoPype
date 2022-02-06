@@ -184,7 +184,7 @@ class MainFloatLayout(FloatLayout):
         if value == "Load Image":
             self.start_blocks.append(scatter.scatter_id) # para comenzar los paths desde estos
             
-            filename = r'C:\Users\trini\Pictures\lena.png'
+            filename = r'C:\Users\trini\Pictures\image(22).jpg'
             #filename = r'C:\Users\Juliana\Pictures\cell.png'
             #filename = r'C:\Users\Juliana\Downloads\18_08_21\coins.jpg'
             scatter.inputs.append(filename)

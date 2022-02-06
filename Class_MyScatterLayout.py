@@ -200,7 +200,7 @@ class Bloque:
                 source = dir + '\\icons\\opencv.png'
             
             button_input = MyParameterButton(button_id = 'input_parameter', parameter_text = checkbox.parameter_text, source = source,background_color = [0, 0, 0, 0])
-            self.ids.inputs.size_hint = .2, (.2 + .05*(2))
+            self.ids.inputs.size_hint = .15, (.15 + .15*(2))
             self.ids.inputs.add_widget(button_input)
             buttoncallbackin = partial(self.draw_line_pipe, self, "input_parameter")
             button_input.bind(on_press= buttoncallbackin)
@@ -221,7 +221,7 @@ class Bloque:
             elif checkbox.parameter_text == 'retval':
                 source = dir + '\\icons\\retval.png'
             button_output = MyParameterButton(button_id = 'output_parameter', parameter_text = checkbox.parameter_text, source = source,background_color = [0, 0, 0, 0])
-            self.ids.outputs.size_hint = .2, (.2 + .05*(2))
+            self.ids.outputs.size_hint = .15, (.15 + .1*(2))
             self.ids.outputs.add_widget(button_output)    
             button_output.bind(on_release = self.save_output)
             buttoncallbackin = partial(self.draw_line_pipe, self, "outputs")

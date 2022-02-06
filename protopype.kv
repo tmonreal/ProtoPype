@@ -337,7 +337,7 @@
                                                 orientation: "vertical"
                                                 id: variable_box                                                
                                 TabbedPanelItem:
-                                        text: 'Opcional'
+                                        text: 'Input/Output'
                                         background_normal: ''
                                         background_down: ''
                                         background_disabled_normal: ""
@@ -553,7 +553,8 @@
                                         on_touch_down: root.slider_change(slider.value)
                                         on_touch_up: root.slider_change(slider.value)
                                         size_hint: 1,1   
-                        
+                                        cursor_height: sp(15)
+                                
                                 Label:
                                         id: label
                                         text: str(slider.value)
