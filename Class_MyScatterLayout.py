@@ -82,7 +82,7 @@ class Bloque:
                             parameters_aux.append(value)
 
                     outputs = self.funcion.evaluate(parameters_aux)
-                    self.view_scatter_image(outputs)
+                    #self.view_scatter_image(outputs)
                     
                 else:
                     if self.funcion.nombre == "Load Image":

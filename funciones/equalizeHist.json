@@ -1,0 +1,12 @@
+[
+    {
+      "nombre": "Equalize Hist",
+      "funcion": "cv2.equalizeHist",
+      "group": "Morphology",
+      "input images": 1,
+      "output images": 1,
+      "parameters_order": [],
+      "outputs_order": ["dst"],
+      "widgets": []
+    }        
+]
