@@ -187,7 +187,7 @@ class MainFloatLayout(FloatLayout):
             #filename = r'C:\Users\trini\Pictures\image(22).jpg'
             #filename = r'C:\Users\Juliana\Pictures\cell.png'
             #filename = r'C:\Users\Juliana\Desktop\Proyecto Final\saved_images\saved_images_0.jpg'
-            filename = r'C:\Users\Juliana\Downloads\radiografia_crop2.jpg'
+            filename = r'C:\Users\Juliana\Downloads\radiografia_crop3.jpg'
             scatter.inputs.append(filename)
         return scatter
 

@@ -9,7 +9,7 @@
       "outputs_order": ["dst"],
       "widgets": [{
           "assign": [{"text":"cv2.MORPH_OPEN", "label": "op"},
-                     {"text":"cv2.getStructuringElement(cv2.MORPH_RECT, (3,3))", "label": "kernel"}  ]
+                     {"text":"cv2.getStructuringElement(cv2.MORPH_RECT, (10,10))", "label": "kernel"}  ]
                 }],
         "information": [{
             "function": "",
