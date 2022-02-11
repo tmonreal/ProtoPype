@@ -270,6 +270,56 @@
         "widgets": []
     },
     {
+        "nombre": "Structuring Element",
+        "funcion": "cv2.getStructuringElement",
+        "group": "Morphology",
+        "input images": 0,
+        "output images": 1,
+        "parameters_order": ["shape", "ksize"],
+        "outputs_order": ["retval"],
+        "widgets": [{
+            "spinner": [
+                {
+                    "text":"cv2.MORPH_CROSS",
+                    "values":["cv2.MORPH_RECT","cv2.MORPH_CROSS","cv2.MORPH_ELLIPSE"],
+                    "label":"shape"
+                }],
+            "size": [{
+                        "label": "ksize",
+                        "input type 1": "int",
+                        "input type 2": "int",
+                        "value 1": 15,
+                        "value 2": 15,
+                        "specification": "odd"
+                    }] 
+                    }]
+    },
+    {
+        "nombre": "Ones",
+        "funcion": "np.ones",
+        "group": "Numpy Functions",
+        "input images": 0,
+        "output images": 1,
+        "parameters_order": ["shape", "dtype"],
+        "outputs_order": ["ndarray"],
+        "widgets": [{
+            "spinner": [
+                {
+                    "text":"np.uint8",
+                    "values":["np.float64","np.uint8"],
+                    "label":"dtype"
+                }],
+            "size": [{
+                        "label": "shape",
+                        "input type 1": "int",
+                        "input type 2": "int",
+                        "value 1": 8,
+                        "value 2": 8,
+                        "specification": "even"
+                    }] 
+                    }]
+    },
+    {
         "nombre": "Ones Like",
         "funcion": "np.ones_like",
         "group": "Numpy Functions",

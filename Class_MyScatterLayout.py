@@ -186,7 +186,7 @@ class Bloque:
                 source = dir + '\\icons\\retval.png'
             elif checkbox.parameter_text == 'Color' or checkbox.parameter_text =='ColorMap':
                 source = dir + '\\icons\\color.png'
-            elif checkbox.parameter_text == 'mask':
+            elif checkbox.parameter_text == 'mask' or checkbox.parameter_text == 'kernel':
                 source = dir + '\\icons\\mask.png'
             elif checkbox.parameter_text == 'dsize':
                 source = dir + '\\icons\\size.png'
@@ -216,9 +216,9 @@ class Bloque:
     def add_output_buttons(self, checkbox, value):
         if value and checkbox.was_active == False: # checkbox activado, No permito crear el mismo boton mas de una vez
             dir = str(Path(__file__).parent.absolute())
-            if checkbox.parameter_text == 'dst':
+            if checkbox.parameter_text == 'dst' :
                 source = dir + '\\icons\\image_icon.png'
-            elif checkbox.parameter_text == 'retval':
+            elif checkbox.parameter_text == 'retval' or checkbox.parameter_text == "ndarray":
                 source = dir + '\\icons\\retval.png'
             button_output = MyParameterButton(button_id = 'output_parameter', parameter_text = checkbox.parameter_text, source = source,background_color = [0, 0, 0, 0])
             self.ids.outputs.size_hint = .15, (.15 + .1*(2))
