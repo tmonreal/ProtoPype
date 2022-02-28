@@ -130,5 +130,5 @@ Special thanks to our project director Manuel Alfonso.
 [issues-shield]: https://img.shields.io/github/issues/tmonreal/ProtoPype.svg?style=for-the-badge
 [issues-url]: https://github.com/tmonreal/ProtoPype/issues
 [license-shield]: https://img.shields.io/github/license/tmonreal/ProtoPype.svg?style=for-the-badge
-[license-url]: https://github.com/tmonreal/ProtoPype/blob/master/LICENSE.txt
+[license-url]: https://github.com/tmonreal/ProtoPype/blob/main/LICENSE.txt
 [product-screenshot]: https://github.com/tmonreal/ProtoPype/blob/main/icons/ProtoPype.png
