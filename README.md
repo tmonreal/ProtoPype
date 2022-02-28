@@ -99,7 +99,9 @@ Don't forget to give the project a star! Thanks again!
 ## Contact
 
 Trinidad Monreal - trinidadmonreal@gmail.com
+
 Juliana Ullua - julianaullua097@gmail.com
+
 
 Project Link: [https://github.com/tmonreal/ProtoPype](https://github.com/github_username/repo_name)
 
