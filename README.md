@@ -120,16 +120,14 @@ Special thanks to our project director Manuel Alfonso.
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/github_username/repo_name.svg?style=for-the-badge
-[contributors-url]: https://github.com/github_username/repo_name/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/github_username/repo_name.svg?style=for-the-badge
-[forks-url]: https://github.com/github_username/repo_name/network/members
-[stars-shield]: https://img.shields.io/github/stars/github_username/repo_name.svg?style=for-the-badge
-[stars-url]: https://github.com/github_username/repo_name/stargazers
-[issues-shield]: https://img.shields.io/github/issues/github_username/repo_name.svg?style=for-the-badge
-[issues-url]: https://github.com/github_username/repo_name/issues
-[license-shield]: https://img.shields.io/github/license/github_username/repo_name.svg?style=for-the-badge
-[license-url]: https://github.com/github_username/repo_name/blob/master/LICENSE.txt
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/linkedin_username
+[contributors-shield]: https://img.shields.io/github/contributors/tmonreal/ProtoPype.svg?style=for-the-badge
+[contributors-url]: https://github.com/tmonreal/ProtoPype/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/tmonreal/ProtoPype.svg?style=for-the-badge
+[forks-url]: https://github.com/tmonreal/ProtoPype/network/members
+[stars-shield]: https://img.shields.io/github/stars/tmonreal/ProtoPype.svg?style=for-the-badge
+[stars-url]: https://github.com/tmonreal/ProtoPype/stargazers
+[issues-shield]: https://img.shields.io/github/issues/tmonreal/ProtoPype.svg?style=for-the-badge
+[issues-url]: https://github.com/tmonreal/ProtoPype/issues
+[license-shield]: https://img.shields.io/github/license/tmonreal/ProtoPype.svg?style=for-the-badge
+[license-url]: https://github.com/tmonreal/ProtoPype/blob/master/LICENSE.txt
 [product-screenshot]: https://github.com/tmonreal/ProtoPype/blob/main/icons/ProtoPype.png
